@@ -1,0 +1,141 @@
+/* machine draft (m2c) for mwcps2-3.0.1 -O2 -sdatathreshold 8, tried by autopilot */
+#ifndef M2C_DEFINES
+#define M2C_DEFINES
+typedef s32 M2C_UNK;
+typedef s8 M2C_UNK8;
+typedef s16 M2C_UNK16;
+typedef s32 M2C_UNK32;
+#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
+#define M2C_BITWISE(type, expr) ((type)(expr))
+#define M2C_ERROR(desc) (0)
+#define M2C_CARRY 0
+#define M2C_OVERFLOW(a) (0)
+#endif
+
+extern s32 D_002C41D8;
+extern M2C_UNK D_2D75B8;
+
+void init_reg_size_table(void) {
+    M2C_FIELD(&D_2D75B8, s8 *, 0) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 1) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 2) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 3) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 4) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 5) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 6) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 7) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 8) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 9) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0xA) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0xB) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0xC) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0xD) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0xE) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0xF) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x10) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x11) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x12) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x13) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x14) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x15) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x16) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x17) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x18) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x19) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x1A) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x1B) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x1C) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x1D) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x1E) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x20) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x21) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x22) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x42) = 0x10;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x23) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x24) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x25) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x26) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x27) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x28) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x29) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x2A) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x2B) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x2C) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x2D) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x2E) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x2F) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x30) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x31) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x32) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x33) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x34) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x35) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x36) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x37) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x38) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x39) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x3A) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x3B) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x3C) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x3D) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x3E) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x3F) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x40) = 0x10;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x41) = 0x10;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x43) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x44) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x4B) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x45) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x46) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x47) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x48) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x49) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x4A) = 4;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x4C) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x4D) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x4E) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x4F) = 0;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x50) = 0;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x51) = 0;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x52) = 0;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x53) = 0;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x54) = 0;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x55) = 0;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x56) = 0;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x57) = 0;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x58) = 0;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x59) = 0;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x5A) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x5B) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x5C) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x5D) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x5E) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x5F) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x60) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x61) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x62) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x63) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x64) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x65) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x66) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x79) = 8;
+    D_002C41D8 = 1;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x67) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x68) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x69) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x6A) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x6B) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x6C) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x6D) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x6E) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x6F) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x70) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x71) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x72) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x73) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x74) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x75) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x76) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x77) = 8;
+    M2C_FIELD(&D_2D75B8, s8 *, 0x78) = 8;
+}
